@@ -9,6 +9,11 @@ import MainLayOut from "./Components/MainLayOut";
 import AddCoffee from "./Components/AddCoffee";
 import UpdateCoffeeCard from "./Components/UpdateCoffeeCard";
 import CoffeeUpdate from "./Components/CoffeeUpdate";
+import AuthProviderContext from "./Components/AuthProvider/AuthProviderContext";
+import Register from "./Components/Register";
+import Login from "./Components/Login";
+import { Toaster } from "react-hot-toast";
+import AllUsersData from "./Components/AllUsersData";
 
 const router = createBrowserRouter([
   {
@@ -41,12 +46,26 @@ const router = createBrowserRouter([
             `https://coffee-making-store-client.vercel.app/details/${params.id}`
           ),
       },
+      {
+        path: "/register",
+        element: <Register></Register>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/allUsers",
+        element: <AllUsersData></AllUsersData>,
+        loader: () => fetch("http://localhost:5000/users"),
+      },
     ],
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
+  <AuthProviderContext>
+    <Toaster position="bottom-center" reverseOrder={false} />
     <RouterProvider router={router} />
-  </StrictMode>
+  </AuthProviderContext>
 );
