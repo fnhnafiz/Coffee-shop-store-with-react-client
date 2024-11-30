@@ -13,14 +13,16 @@ const Navbar = () => {
           </div>
         </Link>
       </div>
-      <div className="flex items-center gap-3">
-        <span className="text-center">
-          <img className="w-12" src={navLogo} alt="" />
-        </span>
-        <h1 className="font-extrabold text-center text-3xl md:text-5xl text-white">
-          Espresso Emporium
-        </h1>
-      </div>
+      <Link to="/">
+        <div className="flex items-center gap-3">
+          <span className="text-center">
+            <img className="w-12" src={navLogo} alt="" />
+          </span>
+          <h1 className="font-extrabold text-center text-3xl md:text-5xl text-white">
+            Espresso Emporium
+          </h1>
+        </div>
+      </Link>
       <div>
         <Link to="/login">
           <button className="btn btn-outline bg-white">Login</button>

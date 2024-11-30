@@ -85,6 +85,7 @@ const AddCoffee = () => {
                 Name
               </label>
               <input
+                required
                 type="text"
                 name="name"
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -100,6 +101,7 @@ const AddCoffee = () => {
                 Chef
               </label>
               <input
+                required
                 type="text"
                 name="chef"
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -117,6 +119,7 @@ const AddCoffee = () => {
                 Supplier
               </label>
               <input
+                required
                 type="text"
                 name="supplier"
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -132,6 +135,7 @@ const AddCoffee = () => {
                 Taste
               </label>
               <input
+                required
                 type="text"
                 name="taste"
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -149,6 +153,7 @@ const AddCoffee = () => {
                 Category
               </label>
               <input
+                required
                 type="text"
                 name="category"
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -164,6 +169,7 @@ const AddCoffee = () => {
                 Details
               </label>
               <input
+                required
                 type="text"
                 name="details"
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -180,6 +186,7 @@ const AddCoffee = () => {
               Photo
             </label>
             <input
+              required
               type="text"
               name="photo"
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"

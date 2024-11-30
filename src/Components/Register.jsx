@@ -63,10 +63,10 @@ const Register = () => {
         Back to home
       </Link>
       <div className="hero ">
-        <div className="hero-content flex-col md:flex-row">
+        <div className="hero-content flex-col md:flex-row-reverse">
           <div className="text-center text-white lg:text-left space-y-5">
             <h1 className="text-6xl font-bold">Welcome to Coffee-Store</h1>
-            <h1 className="text-5xl font-thin">Please Login now!</h1>
+            <h1 className="text-5xl font-thin">Please Register Here!</h1>
             <p className="py-6">
               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
@@ -111,8 +111,11 @@ const Register = () => {
                   required
                 />
                 <label className="label">
-                  <Link to="/login" className="label-text-alt  link link-hover">
-                    I have an account
+                  <Link
+                    to="/login"
+                    className="label-text-alt text-xl  link link-hover"
+                  >
+                    I have an account. Please Login
                   </Link>
                 </label>
               </div>
