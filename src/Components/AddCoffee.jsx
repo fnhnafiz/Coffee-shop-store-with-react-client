@@ -199,7 +199,7 @@ const AddCoffee = () => {
               type="submit"
               className="w-full bg-[#D2B48C] text-white px-4 py-2 rounded-md shadow-md  focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-offset-2 focus:ring-offset-gray-100"
             >
-              Add Coffee
+              BUY COFFEE
             </button>
           </div>
         </form>
